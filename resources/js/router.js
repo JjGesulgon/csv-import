@@ -3,7 +3,7 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
-const Overview = () => import('./views/Overview');
+const CsvImport = () => import('./views/CsvImport');
 
 /**
  * Users
@@ -17,7 +17,7 @@ export default new Router({
     mode: 'history',
     routes: [
         // Overiew
-        { path: '/', name: 'overview', component: Overview },
+        { path: '/', name: 'csv-import', component: CsvImport },
 
         // Users
         { path: '/users', name: 'users.index', component: UsersIndex },

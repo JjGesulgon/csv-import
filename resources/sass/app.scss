@@ -1,0 +1,200 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Vue Select
+@import '~vue-select/src/scss/vue-select.scss';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+table > caption {
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+    padding-left: 0.3rem;
+}
+
+.form-control {
+    color: black;
+}
+
+.sticky-top {
+    top: 15px;
+}
+
+.background {
+    background-color: white;
+    border: 1px solid #d3e0e9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toast-body {
+    background-color: rgba(229, 229, 229, 1);
+}
+
+.sidebar-nav li > span.main-title {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 85%;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.sidebar-nav li > span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 90%;
+    font-weight: bold;
+    font-weight: 800;
+}
+
+.sidebar-nav li > a.nav-link {
+    color: rgba(0, 0, 0, 1);
+    font-size: 100%;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-item > a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-sub-menu {
+    width: 100%;
+}
+
+.nav-sub-menu li a.nav-link {
+    padding-left: 25px;
+    font-size: 85%;
+    color: black;
+}
+
+.nav-sub-menu li a.nav-link.active {
+    padding-left: 25px;
+    font-size: 85%;
+    color: white;
+}
+
+.dropdown-item {
+    font-size: 90%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all .2s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.footer {
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid #d3e0e9;
+    border-bottom: 1px solid #d3e0e9;
+    margin-top: 22px;
+}
+
+.appointment-progress {
+    width: 100%;
+    height: 22px;
+    display: none;
+}
+
+.copyright {
+    font-size: 85%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all .2s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.v-select .dropdown-toggle .clear {
+    font-size: 19px !important;
+}
+
+.v-select .selected-tag {
+    margin: 0 !important;
+    padding: 0 0.7em !important;
+}
+
+.v-select .dropdown-toggle {
+    padding: 0 !important;
+    height: 37px !important;
+}
+
+.v-select .dropdown-toggle::after {
+    content: none !important;
+}
+
+.v-select .vs__actions {
+    padding: 8px 6px 0 3px;
+}
+
+.vs__dropdown-toggle {
+    padding: 0 !important;
+    border: 0 !important;
+    margin-left: -7px !important;
+    margin-top: -5px !important;
+}
+
+.vs__selected-options {
+    padding: 0 !important;
+}
+
+.v-select .open-indicator {
+    margin-top: -6px;
+}
+
+.custom-control-label {
+    padding-top: 2px !important;
+}
+
+.vue-datepicker {
+    background-color: #fff !important;
+}
+

@@ -16,4 +16,8 @@ Route::group(['middleware' => ['auth:api']], function () {
             'index', 'store', 'show', 'update', 'destroy'
         ]
     ]);
+
+    // CSV Import
+    Route::post('/contact/import','ContactsController@import');
+    Route::post('/contact/read','ContactsController@readData');
 });

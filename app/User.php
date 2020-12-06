@@ -46,4 +46,24 @@ class User extends Authenticatable
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    /**
+     * The user has many contacts
+     *
+     * @return array object
+     */
+    public function contacts()
+    {
+        return $this->hasMany(Contact::class);
+    }
+
+    /**
+     * The user has many custom_attributes
+     *
+     * @return array object
+     */
+    public function customAttributes()
+    {
+        return $this->hasMany(CustomAttributes::class);
+    }
 }

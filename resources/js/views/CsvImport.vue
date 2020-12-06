@@ -11,6 +11,7 @@
               {{ error.message }}
             </div>
             <button class="btn btn-primary btn-sm mt-3" @click="proceedAction"> Analyze </button>
+
           </div>
         </div>
       </div>

@@ -2,7 +2,15 @@
   <div class="card">
       <div class="card-body">
         <div class="container">
-          <div class="d-none d-sm-block display-4 px-3 font-weight-lighter text-center">Starting Template</div>
+          <div class="d-none d-sm-block display-4 px-3 font-weight-lighter text-center">File Upload</div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="image" class="ideal-font font-weight-bold">File</label>
+              <input id="image" type="file" class="form-control-file" @change="onFileSelected" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -10,13 +18,17 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      file: null,
+    };
   },
   mounted() {
     //
   },
   methods: {
-    // Add ES6 methods here
+    onFileSelected(event) {
+      this.file = event.target.files[0];
+    },
   },
   computed: {
     // Add ES6 methods here that needs caching

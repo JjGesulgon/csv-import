@@ -76,7 +76,7 @@ class ContactsController extends Controller
         'import_file' => 'required|file|mimes:csv,txt'
       ]);
 
-      //get all headers of the csv file
+      // Get all headers of the csv file
       $headers = (new HeadingRowImport)->toArray($request->file('import_file'));
 
       /*
@@ -116,7 +116,6 @@ class ContactsController extends Controller
           fclose($handle);
       }
 
-      // return $data;
       return response()->json([
         'numberOfRows' => sizeOf($data),
         'dataFromFile' => $data,

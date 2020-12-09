@@ -73,7 +73,7 @@ class ContactsController extends Controller
 
     public function readData(Request $request){
       $request->validate([
-        'import_file' => 'required|file|mimes:csv,txt'
+        'import_file' => 'required|file|mimes:csv,txt,xls,xlsx'
       ]);
 
       // Get all headers of the csv file

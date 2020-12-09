@@ -16,7 +16,7 @@ const UsersEdit   = () => import('./views/users/Edit');
 export default new Router({
     mode: 'history',
     routes: [
-        // Overiew
+        // CSV Import
         { path: '/', name: 'csv-import', component: CsvImport },
 
         // Users

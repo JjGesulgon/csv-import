@@ -6,8 +6,20 @@
             </li>
 
             <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'csv-import' }">CSV Import</router-link>
+                <a class="nav-link" href="#import" data-toggle="collapse" aria-expanded="false" aria-controls="import">
+                    Excel File Data Mapping <i class="float-right fas fa-caret-down"></i>
+                </a>
             </li>
+            <div class="collapse" id="import">
+                <ul class="nav flex-column nav-sub-menu">
+                    <li class="nav-item">
+                        <router-link class="nav-link" :to="{ name: 'csv-import' }">Static</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" :to="{ name: 'users.index' }">Dynamic</router-link>
+                    </li>
+                </ul>
+            </div>
 
             <li class="nav-item">
                 <a class="nav-link" href="#users" data-toggle="collapse" aria-expanded="false" aria-controls="users">

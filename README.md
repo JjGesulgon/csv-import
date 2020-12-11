@@ -4,7 +4,7 @@
 * [Setup](#setup)
 
 ## General info
-The Main Purpose of this project is to demonstrate importing of a CSV file then reading and showing its headers on screen.
+The Main Purpose of this project is to demonstrate uploading of a CSV file then reading and showing its data on screen.
 	
 ## Technologies
 Project is created with:
